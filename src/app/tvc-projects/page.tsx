@@ -1,14 +1,13 @@
-export default function Home() {
+export default function TvcProjectsPage() {
   return (
     <main>
       <section className="max-w-content mx-auto px-6 py-24">
         <h1 className="text-4xl md:text-6xl font-light text-textLight">
-          Home Page
+          Dự án TVC
         </h1>
-        <p className="mt-4 text-textGray">
-          Trang chủ MaxCreative - Đang phát triển
-        </p>
       </section>
     </main>
   );
 }
+
+

@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MaxCreative Web
+
+Website giới thiệu MaxCreative - Đối tác sáng tạo chuyên cung cấp giải pháp marketing & truyền thông trọn gói cho các doanh nghiệp và chủ đầu tư bất động sản.
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS v4**
+- **Framer Motion** (Animations)
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-## Learn More
+### Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn build
+yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx         # Root layout với Header & Footer
+│   ├── page.tsx           # Home page
+│   ├── about/             # Về chúng tôi
+│   ├── services/          # Dịch vụ
+│   ├── graphic-projects/  # Dự án đồ họa
+│   ├── tvc-projects/      # Dự án TVC
+│   ├── contact/           # Liên hệ
+│   └── projects/[slug]/   # Chi tiết dự án
+├── components/            # React components
+│   ├── shared/           # Shared components (Header, Footer)
+│   ├── home/             # Home page components
+│   ├── about/            # About page components
+│   ├── services/          # Services page components
+│   ├── projects/          # Projects components
+│   └── contact/          # Contact components
+└── globals.css            # Global styles & design tokens
+```
 
-## Deploy on Vercel
+## Design Tokens
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Primary Color**: `#f0004d`
+- **Background**: `#000000`
+- **Text Light**: `#ffffff`
+- **Text Gray**: `rgba(255, 255, 255, 0.6)`
+- **Max Content Width**: `1344px`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+Deploy to Vercel:
+
+1. Push code to GitHub/GitLab
+2. Import project in Vercel
+3. Vercel will auto-detect Next.js and deploy
+
+## License
+
+Private project - MaxCreative
