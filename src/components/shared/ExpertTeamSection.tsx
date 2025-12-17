@@ -1,0 +1,68 @@
+export default function ExpertTeamSection() {
+  return (
+    <section className="relative w-full bg-bgDark py-16 md:py-24">
+      <div className="max-w-content mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+          {/* Left Column */}
+          <div className="flex flex-col gap-6">
+            {/* Label */}
+            <p
+              className="text-white uppercase text-xs md:text-sm"
+              style={{
+                fontFamily:
+                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                fontWeight: 300,
+                fontStyle: "normal",
+                lineHeight: "100%",
+                letterSpacing: "0%",
+              }}
+            >
+              Đội ngũ chuyên gia
+            </p>
+
+            {/* Heading */}
+            <h2
+              className="text-white text-xl md:text-2xl lg:text-3xl xl:text-[40px]"
+              style={{
+                fontFamily:
+                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                fontWeight: 400,
+                fontStyle: "normal",
+                lineHeight: "120%",
+                letterSpacing: "0%",
+                maxWidth: "460px",
+              }}
+            >
+              Những con người
+              <br />
+              tạo nên khác biệt.
+            </h2>
+          </div>
+
+          {/* Right Column */}
+          <div className="flex flex-col gap-8">
+            {/* Description */}
+            <p
+              className="text-white text-sm md:text-base lg:text-lg xl:text-[20px]"
+              style={{
+                fontFamily:
+                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                fontWeight: 300,
+                fontStyle: "normal",
+                lineHeight: "140%",
+                letterSpacing: "-1%",
+                maxWidth: "600px",
+              }}
+            >
+              Một đội ngũ giàu kinh nghiệm, dám đề xuất, dám thực thi và luôn
+              hướng đến hiệu quả thật cho thương hiệu. Không chỉ tạo nên hình
+              ảnh đẹp, chúng tôi kiến tạo trải nghiệm nhất quán và giàu cảm
+              xúc, giúp thương hiệu tạo dấu ấn khác biệt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
