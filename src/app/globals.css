@@ -24,5 +24,86 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-svn-poppins), Arial, Helvetica, sans-serif;
+  font-family: var(--font-svn-poppins), "SVN-Poppins", Poppins, sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: var(--font-svn-poppins), "SVN-Poppins", Poppins, sans-serif;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes orbit-cw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-ccw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.orbit-cw {
+  animation: orbit-cw 40s linear infinite;
+}
+
+.orbit-ccw-slow {
+  animation: orbit-ccw 60s linear infinite;
+}
+
+.orbit-ccw-fast {
+  animation: orbit-ccw 25s linear infinite;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+@keyframes lang-dot-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.lang-dot-active {
+  animation: lang-dot-pulse 1.4s ease-in-out infinite;
+}
+
+/* Service card full width on mobile, fixed width on desktop */
+@media (max-width: 767px) {
+  .service-card {
+    max-width: 100% !important;
+  }
 }
