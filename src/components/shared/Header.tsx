@@ -86,7 +86,7 @@ export default function Header({ variant = "default" }: HeaderProps) {
               }`}
             >
               {link.label}
-            </Link>
+          </Link>
           ))}
         </div>
 

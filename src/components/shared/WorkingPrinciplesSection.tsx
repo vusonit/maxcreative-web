@@ -61,8 +61,8 @@ export default function WorkingPrinciplesSection() {
               thực chất. Thay vì những lời hứa chung chung, chúng tôi ưu tiên
               quy trình minh bạch, mục tiêu đo lường được và những tối ưu liên
               tục dựa trên kết quả. Đó là cách chúng tôi xây dựng niềm tin lâu
-              dài và tạo nên giá trị bền vững cho từng thương hiệu đồng hành cùng
-              chúng tôi.
+              dài và tạo nên giá trị bền vững cho từng thương hiệu đồng hành
+              cùng chúng tôi.
             </p>
           </div>
         </div>
@@ -70,4 +70,3 @@ export default function WorkingPrinciplesSection() {
     </section>
   );
 }
-

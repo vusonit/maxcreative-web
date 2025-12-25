@@ -12,7 +12,7 @@ export default function AboutPage() {
     <>
       {/* Hero Section with MacBook Mockup */}
       <section
-        className="relative w-full min-h-[260px] sm:min-h-[320px] md:h-[600px] lg:h-[800px] overflow-hidden mt-[-32px] md:mt-[-40px]"
+        className="relative w-full min-h-[260px] sm:min-h-[320px] md:h-[600px] lg:h-[800px] overflow-hidden mt-[-32px] md:mt-[-40px] pt-12"
         style={{
           background: "#000000",
           borderRadius: "0px 0px 80px 80px",

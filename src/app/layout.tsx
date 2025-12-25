@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body className={`${poppins.variable} bg-bgDark text-textLight antialiased`}>
-        {children}
+          {children}
         <Footer />
       </body>
     </html>
