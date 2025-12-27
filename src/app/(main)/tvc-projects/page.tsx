@@ -1,11 +1,18 @@
+import GraphicProjectsHero from "@/components/shared/GraphicProjectsHero";
+import TVCProjectsList from "@/components/shared/TVCProjectsList";
+
 export default function TvcProjectsPage() {
   return (
-      <section className="max-w-content mx-auto px-6 py-24">
-        <h1 className="text-4xl md:text-6xl font-light text-textLight">
-          Dự án TVC
-        </h1>
-      </section>
+    <main>
+      <GraphicProjectsHero
+        title={`Xem những thước phim
+kể trọn câu chuyện
+thương hiệu.`}
+        subtitle={`Các TVC được xây dựng với
+chiều sâu, nhịp điệu và tiêu
+chuẩn hình ảnh cao cấp.`}
+      />
+      <TVCProjectsList />
+    </main>
   );
 }
-
-
