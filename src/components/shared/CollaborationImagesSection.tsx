@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CollaborationImagesSection() {
   return (
-    <section className="relative w-full bg-bgDark py-12 md:py-16 overflow-hidden">
+    <section className="relative w-full bg-bgDark pb-12 md:pb-16 overflow-hidden">
       <div className="max-w-content mx-auto px-6">
         {/* Mobile: Stack vertically */}
         <div className="flex flex-col md:hidden gap-6 items-center">
@@ -72,13 +72,3 @@ export default function CollaborationImagesSection() {
     </section>
   );
 }
-
-
-
-
-
-
-
-
-
-

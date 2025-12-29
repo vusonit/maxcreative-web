@@ -7,7 +7,7 @@
   --color-textLight: #ffffff;
   --color-textGray: rgba(255, 255, 255, 0.6);
 
-  --font-sans: var(--font-svn-poppins), system-ui, sans-serif;
+  --font-sans: var(--font-svn-poppins);
 
   --radius-hero: 80px;
   --radius-pill: 62px;
@@ -24,12 +24,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-svn-poppins), "SVN-Poppins", sans-serif;
+  font-family: var(--font-svn-poppins);
   overflow-x: hidden;
 }
 
 * {
-  font-family: var(--font-svn-poppins), "SVN-Poppins", sans-serif;
+  font-family: var(--font-svn-poppins);
 }
 
 @keyframes scroll {
@@ -101,9 +101,10 @@ body {
   animation: lang-dot-pulse 1.4s ease-in-out infinite;
 }
 
-/* Service card full width on mobile, fixed width on desktop */
-@media (max-width: 767px) {
-  .service-card {
-    max-width: 100% !important;
-  }
+/* Service card: chiếm full width của grid column, không tăng width khi hover */
+.service-card,
+.service-card:hover {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
 }

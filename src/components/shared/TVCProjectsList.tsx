@@ -104,6 +104,26 @@ export default function TVCProjectsList() {
               top: 700px;
             }
           }
+          @keyframes expandIn {
+            from {
+              opacity: 0;
+              transform: scale(0.95);
+              max-height: 224px;
+            }
+            to {
+              opacity: 1;
+              transform: scale(1);
+              max-height: 833px;
+            }
+          }
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
         `,
         }}
       />
@@ -117,7 +137,7 @@ export default function TVCProjectsList() {
               return (
                 <div
                   key={project.id}
-                  className="w-full flex flex-col items-center"
+                  className="w-full flex flex-col items-center transition-all duration-500 ease-in-out"
                   style={{
                     borderTop: "1px solid rgba(255, 255, 255, 0.2)",
                     borderRight: "none",
@@ -125,23 +145,44 @@ export default function TVCProjectsList() {
                     borderLeft: "none",
                   }}
                 >
-                  {isExpanded ? (
-                    <TVCProjectModal
-                      isOpen={isModalOpen}
-                      onClose={handleCloseModal}
-                      title={project.title}
-                      description={project.description}
-                      thumbnail={project.thumbnail}
-                    />
-                  ) : (
-                    <TVCProjectCard
-                      id={project.id}
-                      title={project.title}
-                      description={project.description}
-                      thumbnail={project.thumbnail}
-                      onClick={() => handleProjectClick(project)}
-                    />
-                  )}
+                  <div
+                    className="w-full transition-all duration-500 ease-in-out overflow-hidden"
+                    style={{
+                      height: isExpanded ? "833px" : "auto",
+                      opacity: isExpanded ? 1 : 1,
+                    }}
+                  >
+                    {isExpanded ? (
+                      <div
+                        style={{
+                          animation: "expandIn 0.5s ease-out forwards",
+                        }}
+                      >
+                        <TVCProjectModal
+                          isOpen={isModalOpen}
+                          onClose={handleCloseModal}
+                          title={project.title}
+                          description={project.description}
+                          thumbnail={project.thumbnail}
+                        />
+                      </div>
+                    ) : (
+                      <div
+                        style={{
+                          animation: "fadeIn 0.3s ease-out forwards",
+                        }}
+                      >
+                        <TVCProjectCard
+                          id={project.id}
+                          title={project.title}
+                          description={project.description}
+                          thumbnail={project.thumbnail}
+                          onClick={() => handleProjectClick(project)}
+                          isExpanded={isExpanded}
+                        />
+                      </div>
+                    )}
+                  </div>
                 </div>
               );
             })}

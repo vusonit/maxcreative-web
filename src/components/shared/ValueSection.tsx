@@ -1,5 +1,6 @@
 "use client";
 
+import AboutLinkButton from "./AboutLinkButton";
 import ArrowIcon from "./ArrowIcon";
 
 interface ValuePoint {
@@ -67,10 +68,11 @@ export default function ValueSection() {
             </h2>
 
             {/* Call-to-Action Button */}
-            <button
+            <AboutLinkButton text="Liên hệ ngay" />
+            {/* <button
               className="flex items-center justify-center gap-2 rounded-3xl transition-all duration-300 hover:opacity-90"
               style={{
-                background: "#FF0066",
+                background: "#F0004D",
                 width: "198.8847198486328px",
                 height: "37px",
               }}
@@ -83,7 +85,6 @@ export default function ValueSection() {
                   fontWeight: 400,
                   fontStyle: "normal",
                   fontSize: "14px",
-                  lineHeight: "100%",
                   letterSpacing: "-2%",
                   textAlign: "center",
                 }}
@@ -91,7 +92,7 @@ export default function ValueSection() {
                 Liên hệ ngay
               </span>
               <ArrowIcon size={10.525} strokeWidth={1} className="text-white" />
-            </button>
+            </button> */}
           </div>
 
           {/* Cột phải: Danh sách 5 điểm */}
@@ -119,7 +120,6 @@ export default function ValueSection() {
                         fontWeight: 400,
                         fontStyle: "normal",
                         fontSize: "16px",
-                        lineHeight: "100%",
                         letterSpacing: "0%",
                       }}
                     >

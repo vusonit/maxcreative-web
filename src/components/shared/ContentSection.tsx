@@ -19,12 +19,9 @@ export default function ContentSection({
             <p
               className="text-white uppercase text-xs md:text-sm"
               style={{
-                fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+                fontFamily: "var(--font-svn-poppins)",
                 fontWeight: 300,
                 fontStyle: "normal",
-                lineHeight: "100%",
-                letterSpacing: "0%",
               }}
             >
               {label}
@@ -34,12 +31,9 @@ export default function ContentSection({
             <h2
               className="text-white text-xl md:text-2xl lg:text-3xl xl:text-[40px]"
               style={{
-                fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+                fontFamily: "var(--font-svn-poppins)",
                 fontWeight: 400,
                 fontStyle: "normal",
-                lineHeight: "120%",
-                letterSpacing: "0%",
                 maxWidth: "460px",
               }}
             >
@@ -53,12 +47,9 @@ export default function ContentSection({
             <p
               className="text-white text-sm md:text-base lg:text-lg xl:text-[20px]"
               style={{
-                fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+                fontFamily: "var(--font-svn-poppins)",
                 fontWeight: 300,
                 fontStyle: "normal",
-                lineHeight: "140%",
-                letterSpacing: "-1%",
                 maxWidth: "600px",
               }}
             >
@@ -70,9 +61,3 @@ export default function ContentSection({
     </section>
   );
 }
-
-
-
-
-
-

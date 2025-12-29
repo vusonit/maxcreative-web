@@ -17,20 +17,26 @@ export default function GraphicProjectCard({
   if (isMore) {
     return (
       <div
-        className="group relative w-full aspect-square max-w-[600px] bg-bgDark border border-white/15 overflow-hidden flex items-center justify-center cursor-pointer transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.6)]"
+        className="group relative w-full aspect-square  bg-bgDark border border-white/15 overflow-hidden flex items-center justify-center cursor-pointer transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.6)]"
         onClick={onClick}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-[#70001F] to-black opacity-20 group-hover:opacity-80 transition-opacity duration-500" />
+        {/* Gradient overlay - chỉ hiện khi hover */}
+        <div
+          className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          style={{
+            background:
+              "linear-gradient(to top right, rgba(240, 0, 77, 0.85) 0%, rgba(240, 0, 77, 0.75) 20%, rgba(240, 0, 77, 0.5) 35%, rgba(120, 0, 38, 0.4) 50%, rgba(40, 0, 13, 0.5) 65%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.8) 100%)",
+          }}
+        />
         <ArrowIcon
-          size={18}
+          size={30}
           strokeWidth={1}
-          className="absolute top-[7px] right-[7px] text-white rotate transition-all duration-700 group-hover:text-primary group-hover:rotate-0"
+          className="absolute top-[30px] right-[30px] text-white rotate transition-all duration-700 group-hover:text-primary group-hover:rotate-0"
         />
         <p
           className="relative z-10 text-textLight text-[20px] font-medium leading-[1.35] text-center"
           style={{
-            fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+            fontFamily: "var(--font-svn-poppins)",
           }}
         >
           Tất cả dự án
@@ -41,7 +47,7 @@ export default function GraphicProjectCard({
 
   return (
     <div
-      className="group relative w-full aspect-square max-w-[600px] overflow-hidden cursor-pointer"
+      className="group relative w-full aspect-square  overflow-hidden cursor-pointer "
       onClick={onClick}
     >
       {/* Image */}
@@ -59,7 +65,7 @@ export default function GraphicProjectCard({
         className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         style={{
           background:
-            "linear-gradient(180deg, rgba(240,0,77,0) 42.17%, #F0004D 100%)",
+            "linear-gradient(to top right, rgba(240, 0, 77, 0.85) 0%, rgba(240, 0, 77, 0.75) 20%, rgba(240, 0, 77, 0.5) 35%, rgba(120, 0, 38, 0.4) 50%, rgba(40, 0, 13, 0.5) 65%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.8) 100%)",
         }}
       />
 
@@ -69,8 +75,7 @@ export default function GraphicProjectCard({
           <p
             className="text-textLight text-[20px] leading-[1.35] font-medium"
             style={{
-              fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+              fontFamily: "var(--font-svn-poppins)",
             }}
           >
             {title.split("\n").map((line, index) => (

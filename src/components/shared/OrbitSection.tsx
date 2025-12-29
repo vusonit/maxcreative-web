@@ -31,7 +31,7 @@ export default function OrbitSection() {
             <div className="relative w-full max-w-[320px] md:max-w-[420px] lg:max-w-[512px] aspect-square">
               {/* Outer dashed orbit */}
               <div className="absolute inset-0 rounded-full border border-white/10 border-dashed orbit-ccw-slow">
-                <div className="absolute top-[4%] right-[6%] w-2 h-2 rounded-full bg-[#5E001E]" />
+                <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 w-2 h-2 rounded-full bg-[#5E001E]" />
               </div>
 
               {/* Middle solid orbit (vòng 3) */}
@@ -77,7 +77,12 @@ export default function OrbitSection() {
         </div>
 
         {/* Bottom: Service Cards */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+          style={{
+            gap: "clamp(6px, 0.75vw, 30px)",
+          }}
+        >
           <ServiceCard
             index="01"
             title="Nghiên cứu thị trường"

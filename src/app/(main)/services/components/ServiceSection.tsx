@@ -60,11 +60,10 @@ export default function ServiceSection({
           className="text-white relative z-10"
           style={{
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
             fontWeight: 500,
             fontStyle: "normal",
             fontSize: "14px",
-            lineHeight: "100%",
             letterSpacing: "-1.9%",
             paddingTop: "8px",
             marginLeft: "10px",
@@ -90,8 +89,3 @@ export default function ServiceSection({
     </div>
   );
 }
-
-
-
-
-

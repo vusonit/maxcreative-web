@@ -8,14 +8,12 @@ export default function StatisticItem({ label, value }: StatisticItemProps) {
     <div className="group relative">
       <div className="flex items-baseline justify-between md:block">
         <p
-          className="text-white mb-1 md:mb-2"
+          className="text-white mb-2 md:mb-4"
           style={{
-            fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+            fontFamily: "var(--font-svn-poppins)",
             fontWeight: 400,
             fontStyle: "normal",
             fontSize: "14px",
-            lineHeight: "100%",
             letterSpacing: "0%",
           }}
         >
@@ -25,8 +23,7 @@ export default function StatisticItem({ label, value }: StatisticItemProps) {
           <span
             className="text-white text-4xl md:text-6xl lg:text-9xl xl:text-[150px]"
             style={{
-              fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+              fontFamily: "var(--font-svn-poppins)",
               fontWeight: 300,
               fontStyle: "normal",
               lineHeight: "113px",

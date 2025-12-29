@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import ArrowIcon from "./ArrowIcon";
+import AboutLinkButton from "./AboutLinkButton";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -153,17 +154,7 @@ export default function ContactSection() {
               </div>
 
               {/* Nút submit */}
-              <button
-                type="submit"
-                className="flex items-center gap-3 bg-[#F0004D] text-white px-6 py-2 rounded-3xl hover:opacity-90 transition-opacity w-fit"
-                style={{
-                  fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
-                }}
-              >
-                <span>Gửi lời nhắn</span>
-                <ArrowIcon size={18} className="text-white rotate-45" />
-              </button>
+              <AboutLinkButton text="Gửi lời nhắn" />
             </form>
           </div>
 

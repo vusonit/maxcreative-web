@@ -113,7 +113,6 @@ export default function ServicesContent() {
                       "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 300,
                     fontStyle: "normal",
-                    lineHeight: "100%",
                     letterSpacing: "-1%",
                   }}
                 >
@@ -149,7 +148,7 @@ export default function ServicesContent() {
                       >
                         <path
                           d="M5 12H19M19 12L12 5M19 12L12 19"
-                          stroke="#FF0066"
+                          stroke="#F0004D"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -185,7 +184,6 @@ export default function ServicesContent() {
                       "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 300,
                     fontStyle: "normal",
-                    lineHeight: "100%",
                     letterSpacing: "-1%",
                   }}
                 >
@@ -234,9 +232,3 @@ export default function ServicesContent() {
     </section>
   );
 }
-
-
-
-
-
-

@@ -55,7 +55,8 @@ export default function TVCProjectModal({
             width: 100%;
             height: 833px;
             background: #F0004D;
-            animation: slideIn 0.3s ease-out;
+            animation: modalExpand 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-origin: top center;
           }
           .tvc-modal-title {
             position: absolute;
@@ -63,7 +64,7 @@ export default function TVCProjectModal({
             height: 70px;
             top: 25px;
             left: 104px;
-            font-family: var(--font-svn-poppins), 'SVN-Poppins', sans-serif;
+            font-family: var(--font-svn-poppins);
             font-weight: 400;
             font-style: normal;
             font-size: 40px;
@@ -85,7 +86,7 @@ export default function TVCProjectModal({
             top: 30px;
             left: 730px;
             right: 131px;
-            font-family: var(--font-svn-poppins), 'SVN-Poppins', sans-serif;
+            font-family: var(--font-svn-poppins);
             font-weight: 400;
             font-style: normal;
             font-size: 14px;
@@ -106,11 +107,19 @@ export default function TVCProjectModal({
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease, border-color 0.3s ease;
+            transform: rotate(45deg);
           }
           .tvc-modal-close:hover {
             opacity: 0.8;
+            border-color: #F0004D;
             transform: rotate(45deg);
+          }
+          .tvc-modal-close .tvc-modal-close-icon {
+            transition: filter 0.3s ease;
+          }
+          .tvc-modal-close:hover .tvc-modal-close-icon {
+            filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5000%) hue-rotate(330deg) brightness(1) contrast(1);
           }
           .tvc-modal-video-container {
             position: absolute;
@@ -136,14 +145,16 @@ export default function TVCProjectModal({
               opacity: 1;
             }
           }
-          @keyframes slideIn {
+          @keyframes modalExpand {
             from {
-              transform: translateY(-20px);
               opacity: 0;
+              transform: scaleY(0.3) translateY(-50px);
+              max-height: 224px;
             }
             to {
-              transform: translateY(0);
               opacity: 1;
+              transform: scaleY(1) translateY(0);
+              max-height: 833px;
             }
           }
         `,
@@ -181,6 +192,7 @@ export default function TVCProjectModal({
             alt="Close"
             width={28}
             height={28}
+            className="tvc-modal-close-icon"
           />
         </button>
 

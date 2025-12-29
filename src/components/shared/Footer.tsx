@@ -9,7 +9,7 @@ export default function Footer() {
   const [email, setEmail] = useState("");
 
   const baseTextStyle: React.CSSProperties = {
-    fontFamily: "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+    fontFamily: "var(--font-svn-poppins)",
     fontWeight: 300,
     fontStyle: "normal",
     fontSize: "14px",

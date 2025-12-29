@@ -1,5 +1,5 @@
-import Link from "next/link";
 import StatisticItem from "@/components/shared/StatisticItem";
+import AboutLinkButton from "@/components/shared/AboutLinkButton";
 
 export default function AboutVideoSection() {
   return (
@@ -42,8 +42,6 @@ export default function AboutVideoSection() {
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
-                  lineHeight: "100%",
-                  letterSpacing: "0%",
                   textAlign: "justify",
                 }}
               >
@@ -61,7 +59,6 @@ export default function AboutVideoSection() {
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
-                  lineHeight: "100%",
                   letterSpacing: "0%",
                   textAlign: "justify",
                 }}
@@ -71,25 +68,7 @@ export default function AboutVideoSection() {
               </p>
 
               {/* CTA Button */}
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-2 bg-primary text-white px-6 py-1.5 rounded-3xl w-fit mt-4 hover:bg-primary/90 transition-colors"
-              >
-                <span>Về chúng tôi</span>
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </Link>
+              <AboutLinkButton />
             </div>
 
             {/* Right Section - Statistics */}
@@ -129,14 +108,3 @@ export default function AboutVideoSection() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-

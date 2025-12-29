@@ -157,7 +157,7 @@ export default function ProcessPhases() {
       alignItems: "center",
       whiteSpace: "nowrap",
       zIndex: 1, // Đảm bảo box nằm trên border
-      transform: isInView ? "translateX(50px)" : "translateX(0)",
+      transform: isInView ? "translateX(0)" : "translateX(50px)",
       transition: "transform 0.8s ease-in-out",
     };
   };
@@ -233,7 +233,6 @@ export default function ProcessPhases() {
                     fontWeight: 400,
                     fontStyle: "normal",
                     fontSize: "14px",
-                    lineHeight: "100%",
                     letterSpacing: "0%",
                     textAlign: "left",
                     whiteSpace: "nowrap",
@@ -259,7 +258,6 @@ export default function ProcessPhases() {
                       fontWeight: 300,
                       fontStyle: "normal",
                       fontSize: "14px",
-                      lineHeight: "100%",
                       letterSpacing: "-2%",
                     }}
                   >

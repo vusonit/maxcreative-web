@@ -74,7 +74,7 @@ export default function ProcessBars() {
                     style={{
                       height: "8px",
                       top: isInView ? step.topPosition : "270px", // Mặc định ở dưới, khi view thì về vị trí ban đầu
-                      backgroundColor: isInView ? "#FF0066" : "#808080", // Mặc định xám, khi view thì hồng
+                      backgroundColor: isInView ? "#F0004D" : "#808080", // Mặc định xám, khi view thì hồng
                       transitionDuration: "1500ms", // Chậm hơn để cảm nhận rõ hơn
                     }}
                   />

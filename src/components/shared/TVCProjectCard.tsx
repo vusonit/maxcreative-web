@@ -9,6 +9,7 @@ interface TVCProjectCardProps {
   description: string;
   thumbnail?: string;
   onClick?: () => void;
+  isExpanded?: boolean;
 }
 
 export default function TVCProjectCard({
@@ -17,8 +18,15 @@ export default function TVCProjectCard({
   description,
   thumbnail,
   onClick,
+  isExpanded = false,
 }: TVCProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
   return (
     <>
       <style
@@ -36,7 +44,7 @@ export default function TVCProjectCard({
             height: 70px;
             top: 25px;
             left: 104px;
-            font-family: var(--font-svn-poppins), 'SVN-Poppins', sans-serif;
+            font-family: var(--font-svn-poppins);
             font-weight: 400;
             font-style: normal;
             font-size: 40px;
@@ -55,7 +63,7 @@ export default function TVCProjectCard({
             top: 30px;
             left: 730px;
             right: 131px;
-            font-family: var(--font-svn-poppins), 'SVN-Poppins', sans-serif;
+            font-family: var(--font-svn-poppins);
             font-weight: 400;
             font-style: normal;
             font-size: 14px;
@@ -70,13 +78,26 @@ export default function TVCProjectCard({
             right: 31px;
             border: 0.5px solid #FFFFFF;
             border-radius: 200px;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, border-color 0.3s ease;
           }
-          .tvc-icon-button-desktop:hover {
-            transform: rotate(45deg);
+          .tvc-icon-button-desktop:hover:not(.clicked) {
+            border-color: #F0004D;
           }
-          .tvc-icon-button-desktop.active {
-            transform: rotate(45deg);
+          .tvc-icon-button-desktop:hover:not(.clicked) .tvc-icon-image {
+            filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5000%) hue-rotate(330deg) brightness(1) contrast(1);
+          }
+          .tvc-icon-button-desktop.clicked {
+            transform: rotate(45deg) !important;
+          }
+          .tvc-icon-button-desktop.clicked:hover {
+            border-color: #F0004D;
+            transform: rotate(45deg) !important;
+          }
+          .tvc-icon-button-desktop.clicked:hover .tvc-icon-image {
+            filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(5000%) hue-rotate(330deg) brightness(1) contrast(1);
+          }
+          .tvc-icon-image {
+            transition: filter 0.3s ease, transform 0.3s ease;
           }
           @media (max-width: 1280px) {
             .tvc-project-card-desktop {
@@ -161,11 +182,11 @@ export default function TVCProjectCard({
 
         {/* Action Icon - Circle with Plus */}
         <button
-          onClick={onClick}
+          onClick={handleClick}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className={`tvc-icon-button-desktop flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer bg-transparent ${
-            isHovered ? "active" : ""
+          className={`tvc-icon-button-desktop flex items-center justify-center cursor-pointer bg-transparent ${
+            isExpanded ? "clicked" : ""
           }`}
         >
           <Image
@@ -173,6 +194,7 @@ export default function TVCProjectCard({
             alt="View more"
             width={28}
             height={28}
+            className="tvc-icon-image"
           />
         </button>
       </div>

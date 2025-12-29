@@ -26,7 +26,6 @@ export default function AboutStatItem({ value, label }: AboutStatItemProps) {
             "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
           fontWeight: 300,
           fontStyle: "normal",
-          lineHeight: "100%",
           letterSpacing: "0%",
         }}
       >

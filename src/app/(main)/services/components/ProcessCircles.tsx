@@ -23,9 +23,9 @@ function ProcessLabel({
   circlePosition = "center",
   hoverOffset,
 }: ProcessLabelProps) {
-  // Tính toán left khi active (scroll vào view)
+  // Tính toán left khi active (scroll vào view) - ĐẢO NGƯỢC: khi không active thì di chuyển, khi active thì về vị trí ban đầu
   const getActiveLeft = () => {
-    if (!isActive) return left;
+    if (isActive) return left; // Khi active, về vị trí ban đầu
 
     // Parse left value
     const isPercentage = left.includes("%");
@@ -37,7 +37,7 @@ function ProcessLabel({
     const offsetPixel = hoverOffset !== undefined ? hoverOffset : 50;
 
     if (circlePosition === "left") {
-      // Label vòng tròn 1: tăng % left (dịch sang phải)
+      // Label vòng tròn 1: tăng % left (dịch sang phải) khi không active
       if (isPercentage) {
         return `${numericValue + offsetPercentage}%`;
       } else if (isPixel) {
@@ -46,7 +46,7 @@ function ProcessLabel({
       }
       return left;
     } else if (circlePosition === "right") {
-      // Label vòng tròn 3: giảm % left (dịch sang trái)
+      // Label vòng tròn 3: giảm % left (dịch sang trái) khi không active
       if (isPercentage) {
         return `${numericValue - offsetPercentage}%`;
       } else if (isPixel) {
@@ -55,7 +55,7 @@ function ProcessLabel({
       }
       return left;
     } else if (circlePosition === "center" && hoverOffset !== undefined) {
-      // Label vòng tròn 2: có thể điều chỉnh nếu có hoverOffset
+      // Label vòng tròn 2: có thể điều chỉnh nếu có hoverOffset khi không active
       if (isPercentage) {
         return `${numericValue - offsetPercentage}%`; // Giảm % = dịch sang trái
       } else if (isPixel) {
@@ -79,7 +79,7 @@ function ProcessLabel({
       }}
     >
       <div
-        className="bg-[#FF0066] rounded-full flex items-center justify-center px-4"
+        className="bg-[#F0004D] rounded-full flex items-center justify-center px-4"
         style={{
           width: "auto",
           height: "32px",
@@ -92,12 +92,10 @@ function ProcessLabel({
         <p
           className="text-white text-center whitespace-nowrap"
           style={{
-            fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+            fontFamily: "var(--font-svn-poppins)",
             fontWeight: 300,
             fontStyle: "normal",
             fontSize: "14px",
-            lineHeight: "100%",
             letterSpacing: "0%",
           }}
         >
@@ -162,7 +160,6 @@ export default function ProcessCircles() {
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
-                  lineHeight: "100%",
                   letterSpacing: "0%",
                   textAlign: "center",
                   width: "100%",
@@ -206,7 +203,6 @@ export default function ProcessCircles() {
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
-                  lineHeight: "100%",
                   letterSpacing: "0%",
                   textAlign: "center",
                   width: "100%",
@@ -272,7 +268,6 @@ export default function ProcessCircles() {
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
-                  lineHeight: "100%",
                   letterSpacing: "0%",
                   textAlign: "center",
                   width: "100%",

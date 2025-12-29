@@ -53,8 +53,7 @@ export default function FeaturedTVCSection() {
         <h2
           className="text-textLight text-lg md:text-xl font-medium mb-8"
           style={{
-            fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+            fontFamily: "var(--font-svn-poppins)",
           }}
         >
           Dự án TVC nổi bật
@@ -63,7 +62,7 @@ export default function FeaturedTVCSection() {
         {/* Main Video Player */}
         <div className="relative w-full mb-6">
           <div
-            className="relative w-full bg-bgDark border border-white/20 rounded-lg overflow-hidden"
+            className="relative w-full bg-bgDark  overflow-hidden"
             style={{ aspectRatio: "16/9", minHeight: "400px" }}
           >
             {isPlaying && selectedVideo ? (
@@ -91,7 +90,7 @@ export default function FeaturedTVCSection() {
                 {/* Play Button */}
                 <button
                   onClick={handlePlayButtonClick}
-                  className="relative z-10 w-20 h-20 rounded-full bg-white/90 hover:bg-white transition-colors flex items-center justify-center group"
+                  className="relative z-10 w-20 h-20 bg-white/90 hover:bg-white transition-colors flex items-center justify-center group"
                 >
                   <svg
                     className="w-8 h-8 text-bgDark ml-1"
@@ -111,7 +110,7 @@ export default function FeaturedTVCSection() {
           {TVC_VIDEOS.map((video, index) => (
             <div
               key={video.id}
-              className="group relative shrink-0 w-[200px] aspect-video bg-bgDark border border-white/15 rounded-lg overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:border-primary hover:scale-105"
+              className="group relative shrink-0 w-[200px] aspect-video bg-bgDark   overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:border-primary hover:scale-105"
               onClick={() => handleThumbnailClick(video.videoUrl)}
             >
               <Image
@@ -122,7 +121,7 @@ export default function FeaturedTVCSection() {
               />
               {/* Play icon overlay */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center">
+                <div className="w-12 h-12 bg-white/90 flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-bgDark ml-1"
                     fill="currentColor"
@@ -138,7 +137,7 @@ export default function FeaturedTVCSection() {
           {/* "Tất cả dự án" button */}
           <Link
             href="/tvc-projects"
-            className="group relative shrink-0 w-[200px] aspect-video bg-bgDark border border-white/15 rounded-lg overflow-hidden flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out hover:border-primary hover:-translate-y-1"
+            className="group relative shrink-0 w-[200px] aspect-video bg-bgDark border border-white/15 overflow-hidden flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out hover:border-primary hover:-translate-y-1"
           >
             <div className="flex flex-col items-center gap-2">
               <p
@@ -151,12 +150,38 @@ export default function FeaturedTVCSection() {
                 Tất cả dự án
               </p>
               <ArrowIcon
-                size={18}
-                strokeWidth={2}
-                className="text-textLight rotate-0 group-hover:text-primary group-hover:rotate-45 transition-all duration-300"
+                size={28}
+                strokeWidth={0.5}
+                className="absolute top-[16px] right-[16px] text-textLight rotate-0 group-hover:text-primary group-hover:rotate-45 transition-all duration-300"
               />
             </div>
           </Link>
+          {TVC_VIDEOS.map((video, index) => (
+            <div
+              key={video.id}
+              className="group relative shrink-0 w-[200px] aspect-video bg-bgDark   overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:border-primary hover:scale-105"
+              onClick={() => handleThumbnailClick(video.videoUrl)}
+            >
+              <Image
+                src={video.thumbnail}
+                alt={`Video ${index + 1}`}
+                fill
+                className="object-cover opacity-70 group-hover:opacity-100 transition-opacity"
+              />
+              {/* Play icon overlay */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="w-12 h-12 bg-white/90 flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-bgDark ml-1"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

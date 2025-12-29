@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContentSection from "./ContentSection";
 
 // Tất cả logo trong folder public/logo, trừ logo_maxcreative.svg
 const ALL_PARTNER_LOGOS = [
@@ -59,68 +60,14 @@ const ALL_PARTNER_LOGOS = [
 
 export default function TrustedPartnersSection() {
   return (
-    <section className="relative w-full bg-bgDark py-16 md:py-24">
-      <div className="max-w-content mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 mb-12 md:mb-16">
-          {/* Left Column */}
-          <div className="flex flex-col gap-6">
-            {/* Label */}
-            <p
-              className="text-white uppercase text-xs md:text-sm"
-              style={{
-                fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
-                fontWeight: 300,
-                fontStyle: "normal",
-                lineHeight: "100%",
-                letterSpacing: "0%",
-              }}
-            >
-              Đối tác tin tưởng đồng hành
-            </p>
-
-            {/* Heading */}
-            <h2
-              className="text-white text-xl md:text-2xl lg:text-3xl xl:text-[40px]"
-              style={{
-                fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
-                fontWeight: 400,
-                fontStyle: "normal",
-                lineHeight: "120%",
-                letterSpacing: "0%",
-                maxWidth: "460px",
-              }}
-            >
-              Được tin chọn bởi các
-              <br />
-              thương hiệu hàng đầu.
-            </h2>
-          </div>
-
-          {/* Right Column */}
-          <div className="flex flex-col gap-8">
-            {/* Description */}
-            <p
-              className="text-white text-sm md:text-base lg:text-lg xl:text-[20px]"
-              style={{
-                fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
-                fontWeight: 300,
-                fontStyle: "normal",
-                lineHeight: "140%",
-                letterSpacing: "-1%",
-                maxWidth: "600px",
-              }}
-            >
-              Chúng tôi tự hào được đồng hành cùng những thương hiệu hàng đầu
-              trong lĩnh vực bất động sản. Mỗi dự án là một hành trình hợp tác
-              chặt chẽ, nơi sự tin tưởng và tiêu chuẩn cao của đối tác trở thành
-              động lực để chúng tôi không ngừng nâng tầm chất lượng sáng tạo.
-            </p>
-          </div>
-        </div>
-
+    <section className="relative w-full bg-bgDark">
+      <ContentSection
+        label="Đối tác tin tưởng đồng hành"
+        heading="Được tin chọn bởi các
+thương hiệu hàng đầu."
+        description="Chúng tôi tự hào được đồng hành cùng những thương hiệu hàng đầu trong lĩnh vực bất động sản. Mỗi dự án là một hành trình hợp tác chặt chẽ, nơi sự tin tưởng và tiêu chuẩn cao của đối tác trở thành động lực để chúng tôi không ngừng nâng tầm chất lượng sáng tạo."
+      />
+      <div className="max-w-content mx-auto px-6 pb-16 md:pb-24">
         {/* Grid layout cho logos */}
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-6 md:gap-8">
           {ALL_PARTNER_LOGOS.map((logoName) => (
@@ -142,11 +89,3 @@ export default function TrustedPartnersSection() {
     </section>
   );
 }
-
-
-
-
-
-
-
-
