@@ -101,16 +101,19 @@ export default function GraphicProjectsList() {
         dangerouslySetInnerHTML={{
           __html: `
           .graphic-projects-list-section {
-            margin-top: clamp(-1300px, -150vh, -700px) !important;
+            position: absolute;
+            top: 300px;
+            width: 100%;
+            transform: translateY(0);
           }
           @media (min-width: 640px) {
             .graphic-projects-list-section {
-              margin-top: clamp(-950px, -110vh, -320px) !important;
+              top: 950px;
             }
           }
           @media (min-width: 1024px) {
             .graphic-projects-list-section {
-              margin-top: clamp(-900px, -120vh, -200px) !important;
+              top: 700px;
             }
           }
           #${styleId} {
@@ -130,7 +133,7 @@ export default function GraphicProjectsList() {
         }}
       />
       <section
-        className="graphic-projects-list-section relative w-full z-10 py-16"
+        className="graphic-projects-list-section w-full z-10 py-16"
         style={{
           background: "transparent",
         }}

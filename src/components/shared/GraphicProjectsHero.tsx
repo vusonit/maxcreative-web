@@ -30,7 +30,7 @@ export default function GraphicProjectsHero({
   return (
     <section
       className="relative w-full bg-black overflow-hidden"
-      style={{ minHeight: "400px", height: "190vh" }}
+      style={{ minHeight: "400px", height: "190vh", position: "relative" }}
     >
       {/* Container */}
       <div

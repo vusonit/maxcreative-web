@@ -89,22 +89,25 @@ export default function TVCProjectsList() {
         dangerouslySetInnerHTML={{
           __html: `
           .tvc-projects-list-section {
-            margin-top: clamp(-1300px, -150vh, -700px) !important;
+            position: absolute;
+            top: 300px;
+            width: 100%;
+            transform: translateY(0);
           }
           @media (min-width: 640px) {
             .tvc-projects-list-section {
-              margin-top: clamp(-950px, -110vh, -320px) !important;
+              top: 950px;
             }
           }
           @media (min-width: 1024px) {
             .tvc-projects-list-section {
-              margin-top: clamp(-900px, -120vh, -200px) !important;
+              top: 700px;
             }
           }
         `,
         }}
       />
-      <section className="tvc-projects-list-section relative w-full py-16 z-10">
+      <section className="tvc-projects-list-section w-full py-16 z-10">
         <div className="w-full max-w-content mx-auto px-6">
           <div className="flex flex-col items-center">
             {visibleProjects.map((project, index) => {
