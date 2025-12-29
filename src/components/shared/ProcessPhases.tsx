@@ -229,7 +229,7 @@ export default function ProcessPhases() {
                     left: `${textLeft}px`,
                     top: "-26px",
                     fontFamily:
-                      "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                      "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 400,
                     fontStyle: "normal",
                     fontSize: "14px",
@@ -255,7 +255,7 @@ export default function ProcessPhases() {
                     className="text-white whitespace-nowrap"
                     style={{
                       fontFamily:
-                        "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                        "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                       fontWeight: 300,
                       fontStyle: "normal",
                       fontSize: "14px",

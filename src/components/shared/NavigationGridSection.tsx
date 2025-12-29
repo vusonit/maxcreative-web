@@ -61,7 +61,7 @@ function NavigationTile({
             } text-lg font-medium`}
             style={{
               fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             }}
           >
             {children}

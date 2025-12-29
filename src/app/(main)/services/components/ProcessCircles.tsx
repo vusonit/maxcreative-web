@@ -93,7 +93,7 @@ function ProcessLabel({
           className="text-white text-center whitespace-nowrap"
           style={{
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             fontWeight: 300,
             fontStyle: "normal",
             fontSize: "14px",
@@ -158,7 +158,7 @@ export default function ProcessCircles() {
                 style={{
                   top: "24px",
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
@@ -202,7 +202,7 @@ export default function ProcessCircles() {
                 style={{
                   top: "24px",
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
@@ -268,7 +268,7 @@ export default function ProcessCircles() {
                 style={{
                   top: "24px",
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",

@@ -54,7 +54,7 @@ export default function FeaturedTVCSection() {
           className="text-textLight text-lg md:text-xl font-medium mb-8"
           style={{
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
           }}
         >
           Dự án TVC nổi bật
@@ -145,7 +145,7 @@ export default function FeaturedTVCSection() {
                 className="text-textLight text-sm"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 }}
               >
                 Tất cả dự án

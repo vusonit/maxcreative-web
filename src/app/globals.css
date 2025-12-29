@@ -24,12 +24,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-svn-poppins), "SVN-Poppins", Poppins, sans-serif;
+  font-family: var(--font-svn-poppins), "SVN-Poppins", sans-serif;
   overflow-x: hidden;
 }
 
 * {
-  font-family: var(--font-svn-poppins), "SVN-Poppins", Poppins, sans-serif;
+  font-family: var(--font-svn-poppins), "SVN-Poppins", sans-serif;
 }
 
 @keyframes scroll {

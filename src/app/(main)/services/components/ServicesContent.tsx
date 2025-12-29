@@ -110,7 +110,7 @@ export default function ServicesContent() {
                   className="text-white text-2xl md:text-[48px] whitespace-nowrap"
                   style={{
                     fontFamily:
-                      "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                      "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 300,
                     fontStyle: "normal",
                     lineHeight: "100%",
@@ -182,7 +182,7 @@ export default function ServicesContent() {
                   className="text-white text-2xl md:text-[48px] whitespace-nowrap"
                   style={{
                     fontFamily:
-                      "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                      "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 300,
                     fontStyle: "normal",
                     lineHeight: "100%",
@@ -234,6 +234,8 @@ export default function ServicesContent() {
     </section>
   );
 }
+
+
 
 
 

@@ -11,7 +11,7 @@ export default function StatisticItem({ label, value }: StatisticItemProps) {
           className="text-white mb-1 md:mb-2"
           style={{
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             fontWeight: 400,
             fontStyle: "normal",
             fontSize: "14px",
@@ -26,7 +26,7 @@ export default function StatisticItem({ label, value }: StatisticItemProps) {
             className="text-white text-4xl md:text-6xl lg:text-9xl xl:text-[150px]"
             style={{
               fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
               fontWeight: 300,
               fontStyle: "normal",
               lineHeight: "113px",

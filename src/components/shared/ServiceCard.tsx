@@ -62,7 +62,7 @@ export default function ServiceCard({
             className="text-textGray text-sm"
             style={{
               fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
               fontWeight: 300,
               fontStyle: "normal",
               fontSize: "14px",
@@ -84,7 +84,7 @@ export default function ServiceCard({
           className="text-textLight text-[18px] md:text-[20px]"
           style={{
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             fontWeight: 500,
             fontStyle: "normal",
             lineHeight: "135%",
@@ -100,7 +100,7 @@ export default function ServiceCard({
             className="text-textLight opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
             style={{
               fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
               fontWeight: 300,
               fontStyle: "normal",
               fontSize: "14px",

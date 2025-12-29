@@ -14,7 +14,7 @@ export default function HeroSection() {
           className="text-white text-center text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-[112px] max-w-[320px] sm:max-w-none"
           style={{
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             fontWeight: 300,
             fontStyle: "normal",
             lineHeight: "1.1",
@@ -57,7 +57,7 @@ export default function HeroSection() {
             className="text-white flex-1"
             style={{
               fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
               fontStyle: "normal",
               fontWeight: 300,
               fontSize: "14px",
@@ -126,7 +126,7 @@ export default function HeroSection() {
             className="text-white text-left"
             style={{
               fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
               fontStyle: "normal",
               fontWeight: 300,
               fontSize: "14px",
@@ -141,6 +141,8 @@ export default function HeroSection() {
     </section>
   );
 }
+
+
 
 
 

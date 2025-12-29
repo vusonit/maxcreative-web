@@ -1,12 +1,37 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 
-const poppins = Poppins({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
+const svnPoppins = localFont({
+  src: [
+    {
+      path: "./fonts/SVN-Poppins (18 fonts)/TTF/SVN-Poppins-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SVN-Poppins (18 fonts)/TTF/SVN-Poppins-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SVN-Poppins (18 fonts)/TTF/SVN-Poppins-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SVN-Poppins (18 fonts)/TTF/SVN-Poppins-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SVN-Poppins (18 fonts)/TTF/SVN-Poppins-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-svn-poppins",
   display: "swap",
 });
@@ -23,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <body className={`${poppins.variable} bg-bgDark text-textLight antialiased`}>
+      <body className={`${svnPoppins.variable} bg-bgDark text-textLight antialiased`}>
           {children}
         <Footer />
       </body>

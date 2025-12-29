@@ -53,7 +53,7 @@ export default function ValueSection() {
               className="text-white"
               style={{
                 fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 fontWeight: 400,
                 fontStyle: "normal",
                 fontSize: "40px",
@@ -79,7 +79,7 @@ export default function ValueSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 400,
                   fontStyle: "normal",
                   fontSize: "14px",
@@ -115,7 +115,7 @@ export default function ValueSection() {
                       className="text-gray-400 shrink-0"
                       style={{
                         fontFamily:
-                          "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                          "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                         fontWeight: 400,
                         fontStyle: "normal",
                         fontSize: "16px",
@@ -131,7 +131,7 @@ export default function ValueSection() {
                       className="text-white"
                       style={{
                         fontFamily:
-                          "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                          "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                         fontWeight: 500,
                         fontStyle: "normal",
                         fontSize: "20px",
@@ -150,7 +150,7 @@ export default function ValueSection() {
                     style={{
                       marginLeft: "90px",
                       fontFamily:
-                        "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                        "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                       fontWeight: 300,
                       fontStyle: "normal",
                       fontSize: "14px",

@@ -36,7 +36,7 @@ export default function TVCProjectCard({
             height: 70px;
             top: 25px;
             left: 104px;
-            font-family: var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif;
+            font-family: var(--font-svn-poppins), 'SVN-Poppins', sans-serif;
             font-weight: 400;
             font-style: normal;
             font-size: 40px;
@@ -55,7 +55,7 @@ export default function TVCProjectCard({
             top: 30px;
             left: 730px;
             right: 131px;
-            font-family: var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif;
+            font-family: var(--font-svn-poppins), 'SVN-Poppins', sans-serif;
             font-weight: 400;
             font-style: normal;
             font-size: 14px;

@@ -81,7 +81,7 @@ export default function GraphicProjectsHero({
             left: "50%",
             transform: "translateX(calc(-50% + clamp(-200px, -15vw, 0px)))",
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             fontWeight: 400,
             fontStyle: "normal",
             fontSize: "clamp(24px, 4vw, 64px)",
@@ -103,7 +103,7 @@ export default function GraphicProjectsHero({
             left: "50%",
             transform: "translateX(calc(-50% + clamp(50px, 10vw, 400px)))",
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             fontWeight: 400,
             fontStyle: "normal",
             fontSize: "clamp(10px, 1.2vw, 14px)",
@@ -161,7 +161,7 @@ export default function GraphicProjectsHero({
             left: "50%",
             transform: "translateX(-50%)",
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             fontWeight: 400,
             fontStyle: "normal",
             fontSize: "clamp(18px, 5vw, 28px)",
@@ -186,7 +186,7 @@ export default function GraphicProjectsHero({
             left: "50%",
             transform: "translateX(-50%)",
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             fontWeight: 400,
             fontStyle: "normal",
             fontSize: "clamp(10px, 2.5vw, 12px)",

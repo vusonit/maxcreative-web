@@ -23,7 +23,7 @@ export default function AboutVideoSection() {
                 className="text-white text-2xl md:text-3xl lg:text-4xl xl:text-[48px]"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   lineHeight: "1.1",
                   letterSpacing: "0%",
@@ -38,7 +38,7 @@ export default function AboutVideoSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
@@ -57,7 +57,7 @@ export default function AboutVideoSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
@@ -129,6 +129,8 @@ export default function AboutVideoSection() {
     </>
   );
 }
+
+
 
 
 

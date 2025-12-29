@@ -85,7 +85,7 @@ export default function ProcessBars() {
                   className="text-white text-left mt-4"
                   style={{
                     fontFamily:
-                      "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                      "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 300,
                     fontStyle: "normal",
                     fontSize: "14px",

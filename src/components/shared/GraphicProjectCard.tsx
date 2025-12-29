@@ -30,7 +30,7 @@ export default function GraphicProjectCard({
           className="relative z-10 text-textLight text-[20px] font-medium leading-[1.35] text-center"
           style={{
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
           }}
         >
           Tất cả dự án
@@ -70,7 +70,7 @@ export default function GraphicProjectCard({
             className="text-textLight text-[20px] leading-[1.35] font-medium"
             style={{
               fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             }}
           >
             {title.split("\n").map((line, index) => (

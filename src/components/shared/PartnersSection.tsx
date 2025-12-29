@@ -66,7 +66,7 @@ export default function PartnersSection() {
             className="text-textLight text-lg md:text-xl font-medium"
             style={{
               fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             }}
           >
             Đối tác tin tưởng đồng hành

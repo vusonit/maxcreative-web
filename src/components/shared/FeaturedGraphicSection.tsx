@@ -53,7 +53,7 @@ export default function FeaturedGraphicSection() {
           className="text-textLight text-lg md:text-xl font-medium mb-6"
           style={{
             fontFamily:
-              "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+              "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
           }}
         >
           Dự án đồ hoạ nổi bật

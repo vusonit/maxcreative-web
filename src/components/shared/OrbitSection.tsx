@@ -14,7 +14,7 @@ export default function OrbitSection() {
               style={{
                 maxWidth: "570px",
                 fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 fontWeight: 400,
                 fontStyle: "normal",
                 lineHeight: "120%",

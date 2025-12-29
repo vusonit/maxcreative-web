@@ -9,7 +9,7 @@ export default function Footer() {
   const [email, setEmail] = useState("");
 
   const baseTextStyle: React.CSSProperties = {
-    fontFamily: "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+    fontFamily: "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
     fontWeight: 300,
     fontStyle: "normal",
     fontSize: "14px",
@@ -34,7 +34,7 @@ export default function Footer() {
               className="text-white mb-6 md:mb-24 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-light leading-tight max-w-[440px]"
               style={{
                 fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 fontWeight: 300,
                 lineHeight: "125%",
               }}
@@ -83,7 +83,7 @@ export default function Footer() {
               className="text-white mb-4 md:mb-6 text-base md:text-lg font-light"
               style={{
                 fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 fontWeight: 300,
               }}
             >

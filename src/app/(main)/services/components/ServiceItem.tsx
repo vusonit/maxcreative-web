@@ -47,7 +47,7 @@ export default function ServiceItem({
         className="text-white flex-1"
         style={{
           fontFamily:
-            "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+            "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
           fontWeight: 300,
           fontStyle: "normal",
           fontSize: "12px",
@@ -60,6 +60,8 @@ export default function ServiceItem({
     </div>
   );
 }
+
+
 
 
 

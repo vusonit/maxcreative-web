@@ -69,7 +69,7 @@ export default function TrustedPartnersSection() {
               className="text-white uppercase text-xs md:text-sm"
               style={{
                 fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 fontWeight: 300,
                 fontStyle: "normal",
                 lineHeight: "100%",
@@ -84,7 +84,7 @@ export default function TrustedPartnersSection() {
               className="text-white text-xl md:text-2xl lg:text-3xl xl:text-[40px]"
               style={{
                 fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 fontWeight: 400,
                 fontStyle: "normal",
                 lineHeight: "120%",
@@ -105,7 +105,7 @@ export default function TrustedPartnersSection() {
               className="text-white text-sm md:text-base lg:text-lg xl:text-[20px]"
               style={{
                 fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 fontWeight: 300,
                 fontStyle: "normal",
                 lineHeight: "140%",

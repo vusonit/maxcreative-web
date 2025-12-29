@@ -38,7 +38,7 @@ export default function ContactSection() {
               className="text-white mb-12"
               style={{
                 fontFamily:
-                  "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                  "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 fontWeight: 400,
                 fontStyle: "normal",
                 fontSize: "clamp(28px, 4vw, 40px)",
@@ -66,7 +66,7 @@ export default function ContactSection() {
                   className="bg-transparent text-white placeholder:text-white/70 pb-2 focus:outline-none transition-colors"
                   style={{
                     fontFamily:
-                      "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                      "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 400,
                     fontStyle: "normal",
                     fontSize: "14px",
@@ -74,7 +74,7 @@ export default function ContactSection() {
                     letterSpacing: "0%",
                     width: "100%",
                     maxWidth: "496px",
-                    borderBottom: "1px solid rgba(255, 255, 255, 0.25)",
+                    borderBottom: "0.25px solid #FFFFFF",
                   }}
                 />
               </div>
@@ -91,7 +91,7 @@ export default function ContactSection() {
                   className="bg-transparent text-white placeholder:text-white/70 pb-2 focus:outline-none transition-colors"
                   style={{
                     fontFamily:
-                      "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                      "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 400,
                     fontStyle: "normal",
                     fontSize: "14px",
@@ -99,7 +99,7 @@ export default function ContactSection() {
                     letterSpacing: "0%",
                     width: "100%",
                     maxWidth: "496px",
-                    borderBottom: "1px solid rgba(255, 255, 255, 0.25)",
+                    borderBottom: "0.25px solid #FFFFFF",
                   }}
                 />
               </div>
@@ -116,7 +116,7 @@ export default function ContactSection() {
                   className="bg-transparent text-white placeholder:text-white/70 pb-2 focus:outline-none transition-colors"
                   style={{
                     fontFamily:
-                      "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                      "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 400,
                     fontStyle: "normal",
                     fontSize: "14px",
@@ -124,7 +124,7 @@ export default function ContactSection() {
                     letterSpacing: "0%",
                     width: "100%",
                     maxWidth: "496px",
-                    borderBottom: "1px solid rgba(255, 255, 255, 0.25)",
+                    borderBottom: "0.25px solid #FFFFFF",
                   }}
                 />
               </div>
@@ -139,7 +139,7 @@ export default function ContactSection() {
                   className=" text-white placeholder:text-white/70 pb-2 focus:outline-none transition-colors resize-none"
                   style={{
                     fontFamily:
-                      "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                      "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                     fontWeight: 400,
                     fontStyle: "normal",
                     fontSize: "14px",
@@ -147,7 +147,7 @@ export default function ContactSection() {
                     letterSpacing: "0%",
                     width: "100%",
                     maxWidth: "496px",
-                    borderBottom: "1px solid rgba(255, 255, 255, 0.25)",
+                    borderBottom: "0.25px solid #FFFFFF",
                   }}
                 />
               </div>
@@ -158,7 +158,7 @@ export default function ContactSection() {
                 className="flex items-center gap-3 bg-[#F0004D] text-white px-6 py-2 rounded-3xl hover:opacity-90 transition-opacity w-fit"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                 }}
               >
                 <span>Gửi lời nhắn</span>
@@ -175,7 +175,7 @@ export default function ContactSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 500,
                   fontStyle: "normal",
                   fontSize: "20px",
@@ -189,7 +189,7 @@ export default function ContactSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
@@ -207,7 +207,7 @@ export default function ContactSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 500,
                   fontStyle: "normal",
                   fontSize: "20px",
@@ -221,7 +221,7 @@ export default function ContactSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
@@ -239,7 +239,7 @@ export default function ContactSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 500,
                   fontStyle: "normal",
                   fontSize: "20px",
@@ -253,7 +253,7 @@ export default function ContactSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
@@ -271,7 +271,7 @@ export default function ContactSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 500,
                   fontStyle: "normal",
                   fontSize: "20px",
@@ -285,7 +285,7 @@ export default function ContactSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 300,
                   fontStyle: "normal",
                   fontSize: "14px",
@@ -303,7 +303,7 @@ export default function ContactSection() {
                 className="text-white"
                 style={{
                   fontFamily:
-                    "var(--font-svn-poppins), 'SVN-Poppins', Poppins, sans-serif",
+                    "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
                   fontWeight: 500,
                   fontStyle: "normal",
                   fontSize: "20px",
