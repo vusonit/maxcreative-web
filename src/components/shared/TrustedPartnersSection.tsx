@@ -80,7 +80,10 @@ thương hiệu hàng đầu."
                 alt={logoName.replace("logo_", "").replace(/_/g, " ")}
                 width={120}
                 height={60}
-                className="w-full h-auto max-h-12 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
+                className="w-full h-auto max-h-12 object-contain opacity-70 hover:opacity-100 transition-opacity"
+                style={{
+                  filter: "brightness(0) saturate(100%) invert(1)",
+                }}
               />
             </div>
           ))}

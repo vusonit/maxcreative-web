@@ -78,7 +78,10 @@ export default function PartnersLogoSection() {
                 alt={logoName.replace("logo_", "").replace(/_/g, " ")}
                 width={120}
                 height={40}
-                className="h-6 sm:h-8 lg:h-10 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity shrink-0"
+                className="h-6 sm:h-8 lg:h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity shrink-0"
+                style={{
+                  filter: "brightness(0) saturate(100%) invert(1)",
+                }}
               />
             ))}
             {/* Duplicate để tạo seamless loop */}
@@ -89,7 +92,10 @@ export default function PartnersLogoSection() {
                 alt={logoName.replace("logo_", "").replace(/_/g, " ")}
                 width={120}
                 height={40}
-                className="h-6 sm:h-8 lg:h-10 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity shrink-0"
+                className="h-6 sm:h-8 lg:h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity shrink-0"
+                style={{
+                  filter: "brightness(0) saturate(100%) invert(1)",
+                }}
               />
             ))}
           </div>
