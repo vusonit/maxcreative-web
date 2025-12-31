@@ -65,8 +65,7 @@ export default function PartnersSection() {
           <h2
             className="text-textLight text-lg md:text-xl font-medium"
             style={{
-              fontFamily:
-                "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
+              fontFamily: "var(--font-svn-poppins), 'SVN-Poppins', sans-serif",
             }}
           >
             Đối tác tin tưởng đồng hành
@@ -86,7 +85,12 @@ export default function PartnersSection() {
                 alt={logoName.replace("logo_", "").replace(/_/g, " ")}
                 width={120}
                 height={60}
-                className="w-full h-auto max-h-12 object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity"
+                className={`w-full h-auto max-h-12 object-contain ${
+                  logoName === "logo_sun_memory" ||
+                  logoName === "logo_the_miani"
+                    ? ""
+                    : "brightness-0 invert"
+                } opacity-70 hover:opacity-100 transition-opacity`}
               />
             </div>
           ))}
@@ -95,4 +99,3 @@ export default function PartnersSection() {
     </section>
   );
 }
-

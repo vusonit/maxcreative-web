@@ -90,7 +90,7 @@ export default function FeaturedTVCSection() {
                 {/* Play Button */}
                 <button
                   onClick={handlePlayButtonClick}
-                  className="relative z-10 w-20 h-20 bg-white/90 hover:bg-white transition-colors flex items-center justify-center group"
+                  className="relative z-10 w-20 h-20 rounded-full bg-white/90 hover:bg-white transition-colors flex items-center justify-center group"
                 >
                   <svg
                     className="w-8 h-8 text-bgDark ml-1"
@@ -121,7 +121,7 @@ export default function FeaturedTVCSection() {
               />
               {/* Play icon overlay */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-12 h-12 bg-white/90 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-bgDark ml-1"
                     fill="currentColor"
@@ -170,7 +170,7 @@ export default function FeaturedTVCSection() {
               />
               {/* Play icon overlay */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="w-12 h-12 bg-white/90 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-bgDark ml-1"
                     fill="currentColor"
